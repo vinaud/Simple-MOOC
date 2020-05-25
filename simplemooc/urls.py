@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from simplemooc.core import views
+from simplemooc.core.views import home
 
 urlpatterns = [
-    path(r'^S', 'simplemooc.core.views.home', name='home'),
-    path('admin/', admin.site.urls),
+    path('', home, name='home'),
+    path('admin/', admin.site.urls)
 ]

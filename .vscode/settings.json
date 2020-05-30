@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:Simple-MOOC}/db.sqlite3",
+            "driver": "SQLite",
+            "name": "simplemooc",
+            "previewLimit": 50
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

@@ -3,7 +3,7 @@ from django.db import models
 class CourseManager(models.Manager):
 
     def search(self, query):
-        return self.get_queryset().filter(name__icontains=query, description__icontains=query)
+        return self.get_queryset().filter(models.Q(name__icontains=query) | models.Q(description__icontains=query))
 
 class Course(models.Model):
     name = models.CharField('Nome', max_length=100)

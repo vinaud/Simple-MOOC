@@ -1,10 +1,10 @@
 from django.urls import path
-from simplemooc.courses.views import home
+from simplemooc.courses.views import index
 
 
 app_name="core"
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', index, name='index')
    
 ]

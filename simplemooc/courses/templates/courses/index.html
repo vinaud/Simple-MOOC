@@ -1,7 +1,8 @@
 {% extends "base.html" %}
-{% load static %}
-{% block content %}
 
+{% load static %}
+
+{% block content %}
 <div class="pure-g-r content-ribbon">
     <div class="pure-u-1">
         <div class="l-box">
@@ -26,7 +27,9 @@
     <div class="pure-u-2-3">
         <div class="l-box">
             <h4 class="content-subhead"><a href="{{ course.get_absolute_url }}" title="">{{ course.name }}</a></h4>
+            {{course.about|linebreaks}}
             {{ course.description|linebreaks }}
+            
         </div>
     </div>
 </div>

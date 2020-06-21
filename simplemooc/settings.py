@@ -132,3 +132,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'email@gmail.com'
 EMAIL_HOST_PASSORD = 'senha'
 EMAIL_PORT = 587
+
+CONTACT_EMAIL = 'contato@simplemooc.com'

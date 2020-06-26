@@ -5,7 +5,8 @@ from django.contrib.auth.views import LoginView
 app_name="accounts"
 
 urlpatterns = [
-    path(r'^entrar/$', LoginView, {'template_name': 'accounts/login.html'},  name='login'),
+    re_path(r'^entrar/$', LoginView.as_view(), {'template_name': 'accounts/login.html'},  name='login'),
+    #r'^entrar/$', 'django.contrib.auth.views.login', {'template_name': 'accounts/login.html'}, name='login'
     
    
 ]

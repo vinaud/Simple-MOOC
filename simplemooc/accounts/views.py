@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
